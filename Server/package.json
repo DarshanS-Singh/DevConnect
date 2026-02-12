@@ -1,0 +1,29 @@
+{
+  "name": "devconnect",
+  "version": "1.0.0",
+  "description": "App to connect Developers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "NODEJS",
+    "EXPRESS",
+    "BACKEND"
+  ],
+  "author": "Akshit",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "dotenv": "^16.4.5",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.0",
+    "nodemon": "^3.1.10",
+    "validator": "^13.15.15"
+  }
+}

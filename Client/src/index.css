@@ -1,0 +1,87 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-dev-bg: #0a0e17;
+  --color-dev-surface: #111827;
+  --color-dev-surface-elevated: #1f2937;
+  --color-dev-border: #374151;
+  --color-dev-muted: #6b7280;
+  --color-dev-accent: #06b6d4;
+  --color-dev-accent-hover: #22d3ee;
+  --color-dev-success: #10b981;
+  --color-dev-danger: #ef4444;
+}
+
+* {
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: #0a0e17;
+  color: #f3f4f6;
+  min-height: 100vh;
+}
+
+/* Override DaisyUI base for our dark theme */
+.btn-primary {
+  background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%);
+  border: none;
+  color: #0a0e17;
+  font-weight: 600;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+  color: #0a0e17;
+}
+
+.btn-secondary {
+  background: #1f2937;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+}
+.btn-secondary:hover {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+.input, .fieldset {
+  background-color: #111827 !important;
+  border-color: #374151 !important;
+  color: #f3f4f6 !important;
+}
+.input::placeholder {
+  color: #6b7280;
+}
+.input:focus {
+  outline: none;
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
+}
+
+.card {
+  background-color: #111827;
+  border: 1px solid #374151;
+}
+
+.loading-spinner {
+  color: #06b6d4;
+}
+
+/* Swipe card styles */
+.cursor-grab {
+  cursor: grab;
+}
+
+.cursor-grabbing {
+  cursor: grabbing;
+}
+
+/* Prevent text selection during drag */
+.cursor-grab * {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
