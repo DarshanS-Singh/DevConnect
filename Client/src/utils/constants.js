@@ -1,1 +1,1 @@
-export const BASE_URL = "https://devconnect-kwaf.onrender.com/"
+export const BASE_URL = "https://devconnect-kwaf.onrender.com"
