@@ -22,7 +22,7 @@ const userRouter = require("./routes/user")
 const cors = require('cors')
 
 app.use(cors({
-    origin : "https://dev-connect-pxkm-l7rh68ty9-darshans-singhs-projects.vercel.app/",
+    origin : "https://devconnect-1-vil1.onrender.com",
     credentials : true,
     // ✅ ADD THIS LINE to allow specific methods
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'], 
